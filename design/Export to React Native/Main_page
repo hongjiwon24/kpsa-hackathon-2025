@@ -1,42 +1,51 @@
 import {useStyles, createStyleSheet} from 'react-native-unistyles';
 import {View} from 'react-native';
-import {CardNews} from 'components/page-1/base/card-news';
-import {TitleGroup} from 'components/page-1/base/title-group';
+import {BottomNav} from 'components/page-1/base/bottom-nav';
+import {Header} from 'components/page-1/base/header';
+import {Section1} from 'components/page-1/base/section-1';
+import {Section2} from 'components/page-1/base/section-2';
 
 import type {ViewStyle, StyleProp} from 'react-native';
 
-export interface NewsAreaProps {
+export interface _____Props {
   /** Used to override the default root style. */
   style?: StyleProp<ViewStyle>,
   /** Used to locate this view in end-to-end tests. */
   testID?: string,
 }
 
-export function NewsArea(props: NewsAreaProps) {
+export function _____(props: _____Props) {
   const {styles} = useStyles(stylesheet);
 
   return (
-    <View testID={props.testID ?? "74:1472"} style={[styles.root, props.style]}>
-      <TitleGroup testID="74:1470" style={styles.titleGroup}/>
-      <CardNews testID="74:1471" style={styles.cardNews}/>
-      <CardNews testID="74:1465" style={styles.cardNews2}/>
+    <View testID={props.testID ?? "74:1834"} style={[styles.root, props.style]}>
+      <BottomNav testID="74:1830" style={styles.bottomNav}/>
+      <Header testID="74:1831" style={styles.header}/>
+      <Section2 testID="74:1832" style={styles.section2}/>
+      <Section1 testID="74:1833" style={styles.section1}/>
     </View>
   );
 }
 
 const stylesheet = createStyleSheet(theme => ({
   root: {
-    width: 552,
-    height: 196,
+    width: 360,
+    height: 1097,
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'flex-start',
+    backgroundColor: 'rgba(255, 255, 255, 1)',
   },
-  titleGroup: {
+  bottomNav: {
     flexShrink: 0,
   },
-  cardNews: {
+  header: {
     flexShrink: 0,
   },
-  cardNews2: {
+  section2: {
+    flexShrink: 0,
+  },
+  section1: {
     flexShrink: 0,
   },
 }));
-
