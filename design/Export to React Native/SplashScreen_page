@@ -1,7 +1,6 @@
 import {useStyles, createStyleSheet} from 'react-native-unistyles';
-import {View, Text} from 'react-native';
-import {Image} from 'react-exo/image';
-import simbol from 'assets/img/simbol.png';
+import {View} from 'react-native';
+import {Signature} from '';
 
 import type {ViewStyle, StyleProp} from 'react-native';
 
@@ -16,35 +15,26 @@ export function _____(props: _____Props) {
   const {styles} = useStyles(stylesheet);
 
   return (
-    <View testID={props.testID ?? "53:81"} style={[styles.root, props.style]}>
-      <Text testID="15:276" style={styles.____}>
-        {`버려요약`}
-      </Text>
-      <Image url={simbol} width={42} height={42}/>
+    <View testID={props.testID ?? "74:2948"} style={[styles.root, props.style]}>
+      <Signature testID="74:2947" style={styles.signature}/>
     </View>
   );
 }
 
 const stylesheet = createStyleSheet(theme => ({
   root: {
-    flexDirection: 'row',
     width: 360,
     height: 640,
     paddingTop: 0,
     paddingLeft: 89,
     paddingBottom: 0,
     paddingRight: 90,
+    flexDirection: 'column',
     justifyContent: 'center',
-    alignItems: 'flex-start',
-    rowGap: 10,
-    columnGap: 10,
+    alignItems: 'center',
     backgroundColor: 'rgba(255, 255, 255, 1)',
   },
-  ____: {
-    color: 'rgba(53, 200, 186, 1)',
-    fontFamily: 'Inter',
-    fontSize: 35,
-    fontStyle: 'normal',
-    fontWeight: '800',
+  signature: {
+    flexShrink: 0,
   },
 }));
