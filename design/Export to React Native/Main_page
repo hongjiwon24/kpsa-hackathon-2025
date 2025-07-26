@@ -1,0 +1,41 @@
+import {useStyles, createStyleSheet} from 'react-native-unistyles';
+import {View} from 'react-native';
+import {CardNews} from 'components/page-1/base/card-news';
+import {TitleGroup} from 'components/page-1/base/title-group';
+
+import type {ViewStyle, StyleProp} from 'react-native';
+
+export interface NewsAreaProps {
+  /** Used to override the default root style. */
+  style?: StyleProp<ViewStyle>,
+  /** Used to locate this view in end-to-end tests. */
+  testID?: string,
+}
+
+export function NewsArea(props: NewsAreaProps) {
+  const {styles} = useStyles(stylesheet);
+
+  return (
+    <View testID={props.testID ?? "74:1472"} style={[styles.root, props.style]}>
+      <TitleGroup testID="74:1470" style={styles.titleGroup}/>
+      <CardNews testID="74:1471" style={styles.cardNews}/>
+      <CardNews testID="74:1465" style={styles.cardNews2}/>
+    </View>
+  );
+}
+
+const stylesheet = createStyleSheet(theme => ({
+  root: {
+    width: 552,
+    height: 196,
+  },
+  titleGroup: {
+    flexShrink: 0,
+  },
+  cardNews: {
+    flexShrink: 0,
+  },
+  cardNews2: {
+    flexShrink: 0,
+  },
+}));
