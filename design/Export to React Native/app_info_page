@@ -1,0 +1,91 @@
+import {useStyles, createStyleSheet} from 'react-native-unistyles';
+import {View, Text} from 'react-native';
+import {Image} from 'react-exo/image';
+import dot from 'assets/img/dot.png';
+import dot2 from 'assets/img/dot2.png';
+import dot3 from 'assets/img/dot3.png';
+
+import type {ViewStyle, StyleProp} from 'react-native';
+
+export interface ____4Props {
+  /** Used to override the default root style. */
+  style?: StyleProp<ViewStyle>,
+  /** Used to locate this view in end-to-end tests. */
+  testID?: string,
+}
+
+export function ____4(props: ____4Props) {
+  const {styles} = useStyles(stylesheet);
+
+  return (
+    <View testID={props.testID ?? "53:112"} style={[styles.root, props.style]}>
+      <Image url={dot} width={7} height={7}/>
+      <Image url={dot2} width={7} height={7}/>
+      <Image url={dot3} width={7} height={7}/>
+      <View testID="0:162" style={styles.selectDot}/>
+      <Text testID="0:163" style={styles.skip}>
+        {`SKIP`}
+      </Text>
+      <Text testID="0:164" style={styles._____________}>
+        {`환경 뉴스로
+더 깊이 알 수 있어요`}
+      </Text>
+      <Text testID="0:165" style={styles.next}>
+        {`NEXT`}
+      </Text>
+      <View testID="0:166" style={styles.img}/>
+    </View>
+  );
+}
+
+const stylesheet = createStyleSheet(theme => ({
+  root: {
+    width: 360,
+    height: 640,
+    backgroundColor: 'rgba(255, 255, 255, 1)',
+  },
+  selectDot: {
+    width: 29,
+    height: 7,
+    flexShrink: 0,
+    borderBottomLeftRadius: 50,
+    borderBottomRightRadius: 50,
+    borderTopLeftRadius: 50,
+    borderTopRightRadius: 50,
+    backgroundColor: 'rgba(53, 200, 186, 1)',
+  },
+  skip: {
+    color: 'rgba(0, 0, 0, 1)',
+    fontFamily: 'Inter',
+    fontSize: 17,
+    fontStyle: 'normal',
+    fontWeight: '600',
+  },
+  _____________: {
+    color: 'rgba(0, 0, 0, 1)',
+    textAlign: 'center',
+    fontFamily: 'Inter',
+    fontSize: 26,
+    fontStyle: 'normal',
+    fontWeight: '600',
+    lineHeight: 36,
+  },
+  next: {
+    color: 'rgba(0, 0, 0, 1)',
+    textAlign: 'right',
+    fontFamily: 'Inter',
+    fontSize: 17,
+    fontStyle: 'normal',
+    fontWeight: '600',
+  },
+  img: {
+    width: 212,
+    height: 224,
+    flexShrink: 0,
+    borderBottomLeftRadius: 50,
+    borderBottomRightRadius: 50,
+    borderTopLeftRadius: 50,
+    borderTopRightRadius: 50,
+    backgroundColor: 'rgba(217, 217, 217, 1)',
+  },
+}));
