@@ -1,8 +1,8 @@
 import {useStyles, createStyleSheet} from 'react-native-unistyles';
 import {View, Text} from 'react-native';
-import Group11 from 'assets/svg/group11.svg';
-import Group12 from 'assets/svg/group12.svg';
-import Rectangle13 from 'assets/svg/rectangle13.svg';
+import BackPageBtn from 'assets/svg/backpagebtn.svg';
+import PointIcon from 'assets/svg/pointicon.svg';
+import PointIcon2 from 'assets/svg/pointicon2.svg';
 
 import type {ViewStyle, StyleProp} from 'react-native';
 
@@ -18,17 +18,17 @@ export function _______(props: _______Props) {
 
   return (
     <View testID={props.testID ?? "53:152"} style={[styles.root, props.style]}>
-      <View testID="0:350" style={styles.rectangle10}/>
-      <View testID="0:359" style={styles.rectangle33}/>
+      <View testID="0:350" style={styles.map}/>
+      <View testID="0:359" style={styles.myLocationBtn}/>
       <Text testID="0:360" style={styles.__________}>
         {`내 주변 폐의약품 수거함`}
       </Text>
-      <Rectangle13/>
+      <BackPageBtn/>
       <Text testID="0:363" style={styles.___}>
         {`현위치`}
       </Text>
-      <View testID="0:364" style={styles.rectangle22}/>
-      <View testID="0:365" style={styles.rectangle20}/>
+      <View testID="0:364" style={styles.box}/>
+      <View testID="0:365" style={styles.img}/>
       <Text testID="0:366" style={styles.____}>
         {`행복 약국`}
       </Text>
@@ -38,8 +38,8 @@ export function _______(props: _______Props) {
       <Text testID="0:368" style={styles.$0311234567}>
         {`031-123-4567`}
       </Text>
-      <Group11/>
-      <Group12/>
+      <PointIcon/>
+      <PointIcon2/>
     </View>
   );
 }
@@ -50,13 +50,13 @@ const stylesheet = createStyleSheet(theme => ({
     height: 727,
     backgroundColor: 'rgba(255, 255, 255, 1)',
   },
-  rectangle10: {
+  map: {
     width: 360,
     height: 666,
     flexShrink: 0,
     backgroundColor: 'rgba(207, 206, 206, 1)',
   },
-  rectangle33: {
+  myLocationBtn: {
     width: 53,
     height: 53,
     flexShrink: 0,
@@ -86,7 +86,7 @@ const stylesheet = createStyleSheet(theme => ({
     fontWeight: '500',
     lineHeight: 22,
   },
-  rectangle22: {
+  box: {
     width: 304,
     height: 140,
     flexShrink: 0,
@@ -96,7 +96,7 @@ const stylesheet = createStyleSheet(theme => ({
     borderTopRightRadius: 10,
     backgroundColor: 'rgba(255, 255, 255, 1)',
   },
-  rectangle20: {
+  img: {
     width: 108,
     height: 109,
     flexShrink: 0,
