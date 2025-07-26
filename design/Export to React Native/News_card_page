@@ -1,0 +1,41 @@
+import {useStyles, createStyleSheet} from 'react-native-unistyles';
+import {View} from 'react-native';
+import {Header} from '';
+import {Section} from '';
+
+import type {ViewStyle, StyleProp} from 'react-native';
+
+export interface ____Props {
+  /** Used to override the default root style. */
+  style?: StyleProp<ViewStyle>,
+  /** Used to locate this view in end-to-end tests. */
+  testID?: string,
+}
+
+export function ____(props: ____Props) {
+  const {styles} = useStyles(stylesheet);
+
+  return (
+    <View testID={props.testID ?? "74:2542"} style={[styles.root, props.style]}>
+      <Header testID="74:2540" style={styles.header}/>
+      <Section testID="74:2541" style={styles.section}/>
+    </View>
+  );
+}
+
+const stylesheet = createStyleSheet(theme => ({
+  root: {
+    width: 360,
+    height: 645,
+    paddingBottom: 12,
+    flexDirection: 'column',
+    alignItems: 'flex-start',
+    backgroundColor: 'rgba(255, 255, 255, 1)',
+  },
+  header: {
+    flexShrink: 0,
+  },
+  section: {
+    flexShrink: 0,
+  },
+}));
