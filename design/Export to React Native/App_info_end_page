@@ -1,0 +1,50 @@
+import {useStyles, createStyleSheet} from 'react-native-unistyles';
+import {View} from 'react-native';
+import {Description} from '';
+import {Img} from '';
+import {StartBtn} from '';
+import {SubDescription} from '';
+
+import type {ViewStyle, StyleProp} from 'react-native';
+
+export interface ____10Props {
+  /** Used to override the default root style. */
+  style?: StyleProp<ViewStyle>,
+  /** Used to locate this view in end-to-end tests. */
+  testID?: string,
+}
+
+export function ____10(props: ____10Props) {
+  const {styles} = useStyles(stylesheet);
+
+  return (
+    <View testID={props.testID ?? "74:2933"} style={[styles.root, props.style]}>
+      <StartBtn testID="74:2929" style={styles.startBtn}/>
+      <SubDescription testID="74:2930" style={styles.subDescription}/>
+      <Img testID="74:2931"/>
+      <Description testID="74:2932"/>
+    </View>
+  );
+}
+
+const stylesheet = createStyleSheet(theme => ({
+  root: {
+    width: 360,
+    height: 640,
+    backgroundColor: 'rgba(255, 255, 255, 1)',
+  },
+  startBtn: {
+    flexShrink: 0,
+  },
+  subDescription: {
+    flexShrink: 0,
+  },
+  description: {
+    flexDirection: 'row',
+    width: 150,
+    height: 68,
+    justifyContent: 'center',
+    alignItems: 'center',
+    flexShrink: 0,
+  },
+}));
