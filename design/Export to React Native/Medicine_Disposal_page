@@ -1,0 +1,675 @@
+import {useStyles, createStyleSheet} from 'react-native-unistyles';
+import {View, Text} from 'react-native';
+import BackPageBtn from 'assets/svg/backpagebtn.svg';
+
+import type {ViewStyle, StyleProp} from 'react-native';
+
+export interface ________Props {
+  /** Used to override the default root style. */
+  style?: StyleProp<ViewStyle>,
+  /** Used to locate this view in end-to-end tests. */
+  testID?: string,
+}
+
+export function ________(props: ________Props) {
+  const {styles} = useStyles(stylesheet);
+
+  return (
+    <View testID={props.testID ?? "53:172"} style={[styles.root, props.style]}>
+      <Text testID="15:174" style={styles.________}>
+        {`폐의약품 분리 배출`}
+      </Text>
+      <BackPageBtn/>
+      <View testID="15:195" style={styles.titleLine}/>
+      <View testID="15:196" style={styles.box}>
+        <View testID="15:197" style={styles.img}/>
+        <View testID="15:198" style={styles.boxLine}/>
+        <Text testID="15:199" style={styles.__}>
+          {`알약`}
+        </Text>
+        <Text testID="15:200" style={styles.ptp____________________________________}>
+          {`PTP(은박 포장)나 병에서 알약만 꺼내서 폐의약품 수거함에 넣기
+포장지는 일반쓰레기로 버림`}
+        </Text>
+        <Text testID="15:201" style={styles.____________________________}>
+          {`💡 알약을 포장채로 버리면 분해되지 않아 환경에 악영향을 줍니다`}
+        </Text>
+      </View>
+      <View testID="15:202" style={styles.box2}>
+        <View testID="15:203" style={styles.img2}/>
+        <View testID="15:204" style={styles.boxLine2}/>
+        <Text testID="15:205" style={styles.___}>
+          {`가루약`}
+        </Text>
+        <Text testID="15:206" style={styles.____________________________2}>
+          {`포장을 열고 가루만 수거함에 버리기
+봉지나 약포지는 일반쓰레기로`}
+        </Text>
+        <Text testID="15:207" style={styles.___________________________}>
+          {`💡 조제된 어린이 감기약 등은 유통기한 지난 후 방치되기 쉬워요`}
+        </Text>
+      </View>
+      <View testID="15:208" style={styles.box3}>
+        <View testID="15:209" style={styles.img3}/>
+        <View testID="15:210" style={styles.boxLine3}/>
+        <Text testID="15:211" style={styles._____}>
+          {`연고 및 안약`}
+        </Text>
+        <Text testID="15:212" style={styles._____________________________________________}>
+          {`용기째로 그대로 수거함에 버리기
+사용 여부와 관계없이 약 성분이 남아 있을 수 있으므로 그대로 버리는 게 원칙`}
+        </Text>
+        <Text testID="15:213" style={styles.______________________}>
+          {`💡 개봉 후 일정 기간이 지나면 감염 위험도 증가해요`}
+        </Text>
+      </View>
+      <View testID="15:214" style={styles.box4}>
+        <View testID="15:215" style={styles.img4}/>
+        <View testID="15:216" style={styles.boxLine4}/>
+        <Text testID="15:217" style={styles.___2}>
+          {`패치제`}
+        </Text>
+        <Text testID="15:218" style={styles.____________________________________________________________________}>
+          {`사용 전 제품: 포장 그대로 수거함에 버리기
+사용한 패치: 약효가 거의 흡수되어 일반쓰레기로 버려도 무방
+마약성 진통제 패치(예: 펜타닐 등)는 반드시 접거나 잘라서 버리기`}
+        </Text>
+        <Text testID="15:219" style={styles._____________________}>
+          {`⚠ 강력한 성분이 남아있을 수 있으니 꼭 주의하세요`}
+        </Text>
+      </View>
+      <View testID="15:220" style={styles.box5}>
+        <View testID="15:221" style={styles.img5}/>
+        <View testID="15:222" style={styles.boxLine5}/>
+        <Text testID="15:223" style={styles.___3}>
+          {`패치제`}
+        </Text>
+        <Text testID="15:224" style={styles._____________________________________________________}>
+          {`사용 전: 폐의약품 수거함에 버리기
+사용 후(약 다 쓴 경우): 일반쓰레기로 버려도 가능
+가스가 남았거나 압력이 남은 제품은 약국에 문의`}
+        </Text>
+        <Text testID="15:225" style={styles._______________}>
+          {`⚠ 폭발 위험이 있으니 절대 파손 금지!`}
+        </Text>
+      </View>
+      <View testID="15:226" style={styles.box6}>
+        <View testID="15:227" style={styles.img6}/>
+        <View testID="15:228" style={styles.boxLine6}/>
+        <Text testID="15:229" style={styles.___4}>
+          {`흡입제`}
+        </Text>
+        <Text testID="15:230" style={styles._____________________________________________________2}>
+          {`사용 전: 폐의약품 수거함에 버리기
+사용 후(약 다 쓴 경우): 일반쓰레기로 버려도 가능
+가스가 남았거나 압력이 남은 제품은 약국에 문의`}
+        </Text>
+        <Text testID="15:231" style={styles._______________2}>
+          {`⚠ 폭발 위험이 있으니 절대 파손 금지!`}
+        </Text>
+      </View>
+      <View testID="15:232" style={styles.box7}>
+        <View testID="15:233" style={styles.img7}/>
+        <View testID="15:234" style={styles.boxLine7}/>
+        <Text testID="15:235" style={styles._______}>
+          {`주사제 및 주사기`}
+        </Text>
+        <Text testID="15:236" style={styles.______________________________________________________________}>
+          {`❌ 폐의약품 수거함에는 버리면 안 됨!
+바늘에 캡을 씌우고 뚜껑 있는 플라스틱 병(페트병 등)에 모은 후 밀봉,  → 일반쓰레기로 배출하거나 약국/보건소에 문의`}
+        </Text>
+        <Text testID="15:237" style={styles.__________________________}>
+          {`💡 감염 예방을 위해 꼭 밀봉! 아이 손 닿지 않는 곳에 보관하세요`}
+        </Text>
+      </View>
+      <View testID="15:238" style={styles.box8}>
+        <View testID="15:239" style={styles.img8}/>
+        <View testID="15:240" style={styles.boxLine8}/>
+        <Text testID="15:241" style={styles.__2}>
+          {`캡슐`}
+        </Text>
+        <Text testID="15:242" style={styles.__________________________________________}>
+          {`가능하면 캡슐을 열어 내용물만 수거함에 버리기
+연질캡슐 등 열기 어려운 경우엔 캡슐째로 버려도 무방`}
+        </Text>
+        <Text testID="15:243" style={styles.____________________________3}>
+          {`💡 내용물만 버리는 것이 가장 환경에 좋지만, 실용성도 고려합니다`}
+        </Text>
+      </View>
+      <View testID="15:244" style={styles.group4}>
+        <View testID="15:245" style={styles.img9}/>
+        <View testID="15:246" style={styles.boxLine9}/>
+        <Text testID="15:247" style={styles.____}>
+          {`물약/시럽`}
+        </Text>
+        <Text testID="15:248" style={styles.___________________________________________}>
+          {`뚜껑을 닫은 채 병째로 폐의약품 수거함에 버리기
+병이 유리든 플라스틱이든 분리수거가 아닌 약 수거함에 `}
+        </Text>
+        <Text testID="15:249" style={styles.____________________________________________________________________2}>
+          {`💡 하수구에 붓는 건 ❌! 환경오염의 원인이 됩니다. 다만, 물약은 우편물 훼손이 우려되므로 우체통이 아닌 주민센터, 보건소 등에 설치된 공동수거함을 이용하여야 한다`}
+        </Text>
+      </View>
+      <Text testID="15:250" style={styles.___________}>
+        {`✅ 폐의약품 수거함에 배출`}
+      </Text>
+      <View testID="15:251" style={styles.titleLine2}/>
+      <Text testID="15:252" style={styles._____________}>
+        {`❌폐의약품 수거함에 배출 금지`}
+      </Text>
+    </View>
+  );
+}
+
+const stylesheet = createStyleSheet(theme => ({
+  root: {
+    width: 360,
+    height: 4668,
+    backgroundColor: 'rgba(255, 255, 255, 1)',
+  },
+  ________: {
+    color: 'rgba(0, 0, 0, 1)',
+    textAlign: 'center',
+    fontFamily: 'Inter',
+    fontSize: 18,
+    fontStyle: 'normal',
+    fontWeight: '600',
+    lineHeight: 21,
+  },
+  titleLine: {
+    width: 219,
+    height: 11,
+    flexShrink: 0,
+    backgroundColor: 'rgba(221, 244, 238, 1)',
+  },
+  img: {
+    width: 304,
+    height: 204,
+    flexShrink: 0,
+    borderBottomLeftRadius: 0,
+    borderBottomRightRadius: 0,
+    borderTopLeftRadius: 10,
+    borderTopRightRadius: 10,
+    backgroundColor: 'rgba(230, 230, 230, 1)',
+  },
+  boxLine: {
+    width: 304,
+    height: 432,
+    flexShrink: 0,
+    borderBottomLeftRadius: 10,
+    borderBottomRightRadius: 10,
+    borderTopLeftRadius: 10,
+    borderTopRightRadius: 10,
+    borderWidth: 1,
+    borderStyle: 'solid',
+    borderColor: 'rgba(200, 200, 200, 1)',
+  },
+  __: {
+    color: 'rgba(0, 0, 0, 1)',
+    fontFamily: 'Inter',
+    fontSize: 16,
+    fontStyle: 'normal',
+    fontWeight: '700',
+  },
+  ptp____________________________________: {
+    width: 268,
+    color: 'rgba(0, 0, 0, 1)',
+    fontFamily: 'Inter',
+    fontSize: 14,
+    fontStyle: 'normal',
+    fontWeight: '500',
+    lineHeight: 25,
+  },
+  ____________________________: {
+    width: 268,
+    color: 'rgba(0, 0, 0, 1)',
+    fontFamily: 'Inter',
+    fontSize: 14,
+    fontStyle: 'normal',
+    fontWeight: '500',
+    lineHeight: 25,
+  },
+  box: {
+    width: 304,
+    height: 432,
+    flexShrink: 0,
+  },
+  img2: {
+    width: 304,
+    height: 204,
+    flexShrink: 0,
+    borderBottomLeftRadius: 0,
+    borderBottomRightRadius: 0,
+    borderTopLeftRadius: 10,
+    borderTopRightRadius: 10,
+    backgroundColor: 'rgba(230, 230, 230, 1)',
+  },
+  boxLine2: {
+    width: 304,
+    height: 411,
+    flexShrink: 0,
+    borderBottomLeftRadius: 10,
+    borderBottomRightRadius: 10,
+    borderTopLeftRadius: 10,
+    borderTopRightRadius: 10,
+    borderWidth: 1,
+    borderStyle: 'solid',
+    borderColor: 'rgba(200, 200, 200, 1)',
+  },
+  ___: {
+    color: 'rgba(0, 0, 0, 1)',
+    fontFamily: 'Inter',
+    fontSize: 16,
+    fontStyle: 'normal',
+    fontWeight: '700',
+  },
+  ____________________________2: {
+    width: 268,
+    color: 'rgba(0, 0, 0, 1)',
+    fontFamily: 'Inter',
+    fontSize: 14,
+    fontStyle: 'normal',
+    fontWeight: '500',
+    lineHeight: 25,
+  },
+  ___________________________: {
+    width: 268,
+    color: 'rgba(0, 0, 0, 1)',
+    fontFamily: 'Inter',
+    fontSize: 14,
+    fontStyle: 'normal',
+    fontWeight: '500',
+    lineHeight: 25,
+  },
+  box2: {
+    width: 304,
+    height: 411,
+    flexShrink: 0,
+  },
+  img3: {
+    width: 304,
+    height: 204,
+    flexShrink: 0,
+    borderBottomLeftRadius: 0,
+    borderBottomRightRadius: 0,
+    borderTopLeftRadius: 10,
+    borderTopRightRadius: 10,
+    backgroundColor: 'rgba(230, 230, 230, 1)',
+  },
+  boxLine3: {
+    width: 304,
+    height: 438,
+    flexShrink: 0,
+    borderBottomLeftRadius: 10,
+    borderBottomRightRadius: 10,
+    borderTopLeftRadius: 10,
+    borderTopRightRadius: 10,
+    borderWidth: 1,
+    borderStyle: 'solid',
+    borderColor: 'rgba(200, 200, 200, 1)',
+  },
+  _____: {
+    color: 'rgba(0, 0, 0, 1)',
+    fontFamily: 'Inter',
+    fontSize: 16,
+    fontStyle: 'normal',
+    fontWeight: '700',
+  },
+  _____________________________________________: {
+    width: 268,
+    color: 'rgba(0, 0, 0, 1)',
+    fontFamily: 'Inter',
+    fontSize: 14,
+    fontStyle: 'normal',
+    fontWeight: '500',
+    lineHeight: 25,
+  },
+  ______________________: {
+    width: 268,
+    color: 'rgba(0, 0, 0, 1)',
+    fontFamily: 'Inter',
+    fontSize: 14,
+    fontStyle: 'normal',
+    fontWeight: '500',
+    lineHeight: 25,
+  },
+  box3: {
+    width: 304,
+    height: 438,
+    flexShrink: 0,
+  },
+  img4: {
+    width: 304,
+    height: 204,
+    flexShrink: 0,
+    borderBottomLeftRadius: 0,
+    borderBottomRightRadius: 0,
+    borderTopLeftRadius: 10,
+    borderTopRightRadius: 10,
+    backgroundColor: 'rgba(230, 230, 230, 1)',
+  },
+  boxLine4: {
+    width: 304,
+    height: 488,
+    flexShrink: 0,
+    borderBottomLeftRadius: 10,
+    borderBottomRightRadius: 10,
+    borderTopLeftRadius: 10,
+    borderTopRightRadius: 10,
+    borderWidth: 1,
+    borderStyle: 'solid',
+    borderColor: 'rgba(200, 200, 200, 1)',
+  },
+  ___2: {
+    color: 'rgba(0, 0, 0, 1)',
+    fontFamily: 'Inter',
+    fontSize: 16,
+    fontStyle: 'normal',
+    fontWeight: '700',
+  },
+  ____________________________________________________________________: {
+    width: 268,
+    color: 'rgba(0, 0, 0, 1)',
+    fontFamily: 'Inter',
+    fontSize: 14,
+    fontStyle: 'normal',
+    fontWeight: '500',
+    lineHeight: 25,
+  },
+  _____________________: {
+    width: 268,
+    color: 'rgba(0, 0, 0, 1)',
+    fontFamily: 'Inter',
+    fontSize: 14,
+    fontStyle: 'normal',
+    fontWeight: '500',
+    lineHeight: 25,
+  },
+  box4: {
+    width: 304,
+    height: 488,
+    flexShrink: 0,
+  },
+  img5: {
+    width: 304,
+    height: 204,
+    flexShrink: 0,
+    borderBottomLeftRadius: 0,
+    borderBottomRightRadius: 0,
+    borderTopLeftRadius: 10,
+    borderTopRightRadius: 10,
+    backgroundColor: 'rgba(230, 230, 230, 1)',
+  },
+  boxLine5: {
+    width: 304,
+    height: 480,
+    flexShrink: 0,
+    borderBottomLeftRadius: 10,
+    borderBottomRightRadius: 10,
+    borderTopLeftRadius: 10,
+    borderTopRightRadius: 10,
+    borderWidth: 1,
+    borderStyle: 'solid',
+    borderColor: 'rgba(200, 200, 200, 1)',
+  },
+  ___3: {
+    color: 'rgba(0, 0, 0, 1)',
+    fontFamily: 'Inter',
+    fontSize: 16,
+    fontStyle: 'normal',
+    fontWeight: '700',
+  },
+  _____________________________________________________: {
+    width: 268,
+    color: 'rgba(0, 0, 0, 1)',
+    fontFamily: 'Inter',
+    fontSize: 14,
+    fontStyle: 'normal',
+    fontWeight: '500',
+    lineHeight: 25,
+  },
+  _______________: {
+    width: 268,
+    color: 'rgba(0, 0, 0, 1)',
+    fontFamily: 'Inter',
+    fontSize: 14,
+    fontStyle: 'normal',
+    fontWeight: '500',
+    lineHeight: 25,
+  },
+  box5: {
+    width: 304,
+    height: 480,
+    flexShrink: 0,
+  },
+  img6: {
+    width: 304,
+    height: 204,
+    flexShrink: 0,
+    borderBottomLeftRadius: 0,
+    borderBottomRightRadius: 0,
+    borderTopLeftRadius: 10,
+    borderTopRightRadius: 10,
+    backgroundColor: 'rgba(230, 230, 230, 1)',
+  },
+  boxLine6: {
+    width: 304,
+    height: 480,
+    flexShrink: 0,
+    borderBottomLeftRadius: 10,
+    borderBottomRightRadius: 10,
+    borderTopLeftRadius: 10,
+    borderTopRightRadius: 10,
+    borderWidth: 1,
+    borderStyle: 'solid',
+    borderColor: 'rgba(200, 200, 200, 1)',
+  },
+  ___4: {
+    color: 'rgba(0, 0, 0, 1)',
+    fontFamily: 'Inter',
+    fontSize: 16,
+    fontStyle: 'normal',
+    fontWeight: '700',
+  },
+  _____________________________________________________2: {
+    width: 268,
+    color: 'rgba(0, 0, 0, 1)',
+    fontFamily: 'Inter',
+    fontSize: 14,
+    fontStyle: 'normal',
+    fontWeight: '500',
+    lineHeight: 25,
+  },
+  _______________2: {
+    width: 268,
+    color: 'rgba(0, 0, 0, 1)',
+    fontFamily: 'Inter',
+    fontSize: 14,
+    fontStyle: 'normal',
+    fontWeight: '500',
+    lineHeight: 25,
+  },
+  box6: {
+    width: 304,
+    height: 480,
+    flexShrink: 0,
+  },
+  img7: {
+    width: 304,
+    height: 204,
+    flexShrink: 0,
+    borderBottomLeftRadius: 0,
+    borderBottomRightRadius: 0,
+    borderTopLeftRadius: 10,
+    borderTopRightRadius: 10,
+    backgroundColor: 'rgba(230, 230, 230, 1)',
+  },
+  boxLine7: {
+    width: 304,
+    height: 487.91101,
+    flexShrink: 0,
+    borderBottomLeftRadius: 10,
+    borderBottomRightRadius: 10,
+    borderTopLeftRadius: 10,
+    borderTopRightRadius: 10,
+    borderWidth: 1,
+    borderStyle: 'solid',
+    borderColor: 'rgba(200, 200, 200, 1)',
+  },
+  _______: {
+    color: 'rgba(0, 0, 0, 1)',
+    fontFamily: 'Inter',
+    fontSize: 16,
+    fontStyle: 'normal',
+    fontWeight: '700',
+  },
+  ______________________________________________________________: {
+    width: 268,
+    color: 'rgba(0, 0, 0, 1)',
+    fontFamily: 'Inter',
+    fontSize: 14,
+    fontStyle: 'normal',
+    fontWeight: '500',
+    lineHeight: 25,
+  },
+  __________________________: {
+    width: 268,
+    color: 'rgba(0, 0, 0, 1)',
+    fontFamily: 'Inter',
+    fontSize: 14,
+    fontStyle: 'normal',
+    fontWeight: '500',
+    lineHeight: 25,
+  },
+  box7: {
+    width: 304,
+    height: 487.91101,
+    flexShrink: 0,
+  },
+  img8: {
+    width: 304,
+    height: 204,
+    flexShrink: 0,
+    borderBottomLeftRadius: 0,
+    borderBottomRightRadius: 0,
+    borderTopLeftRadius: 10,
+    borderTopRightRadius: 10,
+    backgroundColor: 'rgba(230, 230, 230, 1)',
+  },
+  boxLine8: {
+    width: 304,
+    height: 455,
+    flexShrink: 0,
+    borderBottomLeftRadius: 10,
+    borderBottomRightRadius: 10,
+    borderTopLeftRadius: 10,
+    borderTopRightRadius: 10,
+    borderWidth: 1,
+    borderStyle: 'solid',
+    borderColor: 'rgba(200, 200, 200, 1)',
+  },
+  __2: {
+    color: 'rgba(0, 0, 0, 1)',
+    fontFamily: 'Inter',
+    fontSize: 16,
+    fontStyle: 'normal',
+    fontWeight: '700',
+  },
+  __________________________________________: {
+    width: 268,
+    color: 'rgba(0, 0, 0, 1)',
+    fontFamily: 'Inter',
+    fontSize: 14,
+    fontStyle: 'normal',
+    fontWeight: '500',
+    lineHeight: 25,
+  },
+  ____________________________3: {
+    width: 268,
+    color: 'rgba(0, 0, 0, 1)',
+    fontFamily: 'Inter',
+    fontSize: 14,
+    fontStyle: 'normal',
+    fontWeight: '500',
+    lineHeight: 25,
+  },
+  box8: {
+    width: 304,
+    height: 455,
+    flexShrink: 0,
+  },
+  img9: {
+    width: 304,
+    height: 204,
+    flexShrink: 0,
+    borderBottomLeftRadius: 0,
+    borderBottomRightRadius: 0,
+    borderTopLeftRadius: 10,
+    borderTopRightRadius: 10,
+    backgroundColor: 'rgba(230, 230, 230, 1)',
+  },
+  boxLine9: {
+    width: 304,
+    height: 515,
+    flexShrink: 0,
+    borderBottomLeftRadius: 10,
+    borderBottomRightRadius: 10,
+    borderTopLeftRadius: 10,
+    borderTopRightRadius: 10,
+    borderWidth: 1,
+    borderStyle: 'solid',
+    borderColor: 'rgba(200, 200, 200, 1)',
+  },
+  ____: {
+    color: 'rgba(0, 0, 0, 1)',
+    fontFamily: 'Inter',
+    fontSize: 16,
+    fontStyle: 'normal',
+    fontWeight: '700',
+  },
+  ___________________________________________: {
+    width: 268,
+    color: 'rgba(0, 0, 0, 1)',
+    fontFamily: 'Inter',
+    fontSize: 14,
+    fontStyle: 'normal',
+    fontWeight: '500',
+    lineHeight: 25,
+  },
+  ____________________________________________________________________2: {
+    width: 268,
+    color: 'rgba(0, 0, 0, 1)',
+    fontFamily: 'Inter',
+    fontSize: 14,
+    fontStyle: 'normal',
+    fontWeight: '500',
+    lineHeight: 25,
+  },
+  group4: {
+    width: 304,
+    height: 515,
+    flexShrink: 0,
+  },
+  ___________: {
+    color: 'rgba(9, 9, 9, 1)',
+    fontFamily: 'Inter',
+    fontSize: 20,
+    fontStyle: 'normal',
+    fontWeight: '600',
+    lineHeight: 21,
+  },
+  titleLine2: {
+    width: 256,
+    height: 11,
+    flexShrink: 0,
+    backgroundColor: 'rgba(221, 244, 238, 1)',
+  },
+  _____________: {
+    color: 'rgba(9, 9, 9, 1)',
+    fontFamily: 'Inter',
+    fontSize: 20,
+    fontStyle: 'normal',
+    fontWeight: '600',
+    lineHeight: 21,
+  },
+}));
