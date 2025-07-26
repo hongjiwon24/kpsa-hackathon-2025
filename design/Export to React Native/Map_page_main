@@ -1,0 +1,42 @@
+import {useStyles, createStyleSheet} from 'react-native-unistyles';
+import {View} from 'react-native';
+import {Header} from '';
+import {Map} from '';
+
+import type {ViewStyle, StyleProp} from 'react-native';
+
+export interface __________Props {
+  /** Used to override the default root style. */
+  style?: StyleProp<ViewStyle>,
+  /** Used to locate this view in end-to-end tests. */
+  testID?: string,
+}
+
+export function __________(props: __________Props) {
+  const {styles} = useStyles(stylesheet);
+
+  return (
+    <View testID={props.testID ?? "74:2094"} style={[styles.root, props.style]}>
+      <Map testID="74:2092" style={styles.map}/>
+      <Header testID="74:2093" style={styles.header}/>
+    </View>
+  );
+}
+
+const stylesheet = createStyleSheet(theme => ({
+  root: {
+    width: 360,
+    height: 727,
+    paddingBottom: 1,
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'flex-start',
+    backgroundColor: 'rgba(255, 255, 255, 1)',
+  },
+  map: {
+    flexShrink: 0,
+  },
+  header: {
+    flexShrink: 0,
+  },
+}));
