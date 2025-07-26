@@ -1,0 +1,40 @@
+import {useStyles, createStyleSheet} from 'react-native-unistyles';
+import {View} from 'react-native';
+import {Bottom} from '';
+import {Description} from '';
+import {Img} from '';
+
+import type {ViewStyle, StyleProp} from 'react-native';
+
+export interface ____6Props {
+  /** Used to override the default root style. */
+  style?: StyleProp<ViewStyle>,
+  /** Used to locate this view in end-to-end tests. */
+  testID?: string,
+}
+
+export function ____6(props: ____6Props) {
+  const {styles} = useStyles(stylesheet);
+
+  return (
+    <View testID={props.testID ?? "74:2904"} style={[styles.root, props.style]}>
+      <Bottom testID="74:2901" style={styles.bottom}/>
+      <Img testID="74:2902"/>
+      <Description testID="74:2903" style={styles.description}/>
+    </View>
+  );
+}
+
+const stylesheet = createStyleSheet(theme => ({
+  root: {
+    width: 360,
+    height: 640,
+    backgroundColor: 'rgba(255, 255, 255, 1)',
+  },
+  bottom: {
+    flexShrink: 0,
+  },
+  description: {
+    flexShrink: 0,
+  },
+}));
