@@ -1,0 +1,50 @@
+import {useStyles, createStyleSheet} from 'react-native-unistyles';
+import {View, Text} from 'react-native';
+import {Image} from 'react-exo/image';
+import simbol from 'assets/img/simbol.png';
+
+import type {ViewStyle, StyleProp} from 'react-native';
+
+export interface _____Props {
+  /** Used to override the default root style. */
+  style?: StyleProp<ViewStyle>,
+  /** Used to locate this view in end-to-end tests. */
+  testID?: string,
+}
+
+export function _____(props: _____Props) {
+  const {styles} = useStyles(stylesheet);
+
+  return (
+    <View testID={props.testID ?? "53:81"} style={[styles.root, props.style]}>
+      <Text testID="15:276" style={styles.____}>
+        {`버려요약`}
+      </Text>
+      <Image url={simbol} width={42} height={42}/>
+    </View>
+  );
+}
+
+const stylesheet = createStyleSheet(theme => ({
+  root: {
+    flexDirection: 'row',
+    width: 360,
+    height: 640,
+    paddingTop: 0,
+    paddingLeft: 89,
+    paddingBottom: 0,
+    paddingRight: 90,
+    justifyContent: 'center',
+    alignItems: 'flex-start',
+    rowGap: 10,
+    columnGap: 10,
+    backgroundColor: 'rgba(255, 255, 255, 1)',
+  },
+  ____: {
+    color: 'rgba(53, 200, 186, 1)',
+    fontFamily: 'Inter',
+    fontSize: 35,
+    fontStyle: 'normal',
+    fontWeight: '800',
+  },
+}));
