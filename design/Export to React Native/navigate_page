@@ -1,0 +1,132 @@
+import {useStyles, createStyleSheet} from 'react-native-unistyles';
+import {View, Text} from 'react-native';
+import Group11 from 'assets/svg/group11.svg';
+import Group12 from 'assets/svg/group12.svg';
+import Rectangle13 from 'assets/svg/rectangle13.svg';
+
+import type {ViewStyle, StyleProp} from 'react-native';
+
+export interface _______Props {
+  /** Used to override the default root style. */
+  style?: StyleProp<ViewStyle>,
+  /** Used to locate this view in end-to-end tests. */
+  testID?: string,
+}
+
+export function _______(props: _______Props) {
+  const {styles} = useStyles(stylesheet);
+
+  return (
+    <View testID={props.testID ?? "53:152"} style={[styles.root, props.style]}>
+      <View testID="0:350" style={styles.rectangle10}/>
+      <View testID="0:359" style={styles.rectangle33}/>
+      <Text testID="0:360" style={styles.__________}>
+        {`내 주변 폐의약품 수거함`}
+      </Text>
+      <Rectangle13/>
+      <Text testID="0:363" style={styles.___}>
+        {`현위치`}
+      </Text>
+      <View testID="0:364" style={styles.rectangle22}/>
+      <View testID="0:365" style={styles.rectangle20}/>
+      <Text testID="0:366" style={styles.____}>
+        {`행복 약국`}
+      </Text>
+      <Text testID="0:367" style={styles.$17Km}>
+        {`1.7km`}
+      </Text>
+      <Text testID="0:368" style={styles.$0311234567}>
+        {`031-123-4567`}
+      </Text>
+      <Group11/>
+      <Group12/>
+    </View>
+  );
+}
+
+const stylesheet = createStyleSheet(theme => ({
+  root: {
+    width: 360,
+    height: 727,
+    backgroundColor: 'rgba(255, 255, 255, 1)',
+  },
+  rectangle10: {
+    width: 360,
+    height: 666,
+    flexShrink: 0,
+    backgroundColor: 'rgba(207, 206, 206, 1)',
+  },
+  rectangle33: {
+    width: 53,
+    height: 53,
+    flexShrink: 0,
+    borderBottomLeftRadius: 50,
+    borderBottomRightRadius: 50,
+    borderTopLeftRadius: 50,
+    borderTopRightRadius: 50,
+    borderWidth: 1,
+    borderStyle: 'solid',
+    borderColor: 'rgba(204, 204, 204, 1)',
+    backgroundColor: 'rgba(255, 255, 255, 1)',
+  },
+  __________: {
+    color: 'rgba(0, 0, 0, 1)',
+    textAlign: 'center',
+    fontFamily: 'Inter',
+    fontSize: 18,
+    fontStyle: 'normal',
+    fontWeight: '600',
+    lineHeight: 21,
+  },
+  ___: {
+    color: 'rgba(0, 0, 0, 1)',
+    fontFamily: 'Inter',
+    fontSize: 10,
+    fontStyle: 'normal',
+    fontWeight: '500',
+    lineHeight: 22,
+  },
+  rectangle22: {
+    width: 304,
+    height: 140,
+    flexShrink: 0,
+    borderBottomLeftRadius: 10,
+    borderBottomRightRadius: 10,
+    borderTopLeftRadius: 10,
+    borderTopRightRadius: 10,
+    backgroundColor: 'rgba(255, 255, 255, 1)',
+  },
+  rectangle20: {
+    width: 108,
+    height: 109,
+    flexShrink: 0,
+    borderBottomLeftRadius: 10,
+    borderBottomRightRadius: 10,
+    borderTopLeftRadius: 10,
+    borderTopRightRadius: 10,
+    backgroundColor: 'rgba(230, 230, 230, 1)',
+  },
+  ____: {
+    color: 'rgba(0, 0, 0, 1)',
+    fontFamily: 'Inter',
+    fontSize: 14,
+    fontStyle: 'normal',
+    fontWeight: '700',
+  },
+  $17Km: {
+    color: 'rgba(115, 115, 115, 1)',
+    fontFamily: 'Inter',
+    fontSize: 12,
+    fontStyle: 'normal',
+    fontWeight: '500',
+    lineHeight: 22,
+  },
+  $0311234567: {
+    color: 'rgba(115, 115, 115, 1)',
+    fontFamily: 'Inter',
+    fontSize: 12,
+    fontStyle: 'normal',
+    fontWeight: '500',
+    lineHeight: 22,
+  },
+}));
